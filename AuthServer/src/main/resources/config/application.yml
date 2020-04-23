@@ -1,0 +1,19 @@
+spring:
+    application:
+        name: Auth
+    datasource:
+        url: jdbc:mysql://localhost:3306/user?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=utf8&useSSL=false
+        username: root
+        password: root
+        driver-class-name: com.mysql.jdbc.Driver
+
+    jpa:
+        show-sql: true
+        hibernate:
+            ddl-auto: create
+        properties:
+            hibernate.hbm2ddl.auto: update
+server:
+    port: 9000
+    address: localhost
+debug: false
