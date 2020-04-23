@@ -1,0 +1,12 @@
+AuthUrl: http://localhost:9000
+
+security:
+  oauth2:
+    client:
+      client-id: demo
+      client-secret: demo
+      access-token-uri: ${AuthUrl}/oauth/token
+      user-authorization-uri: ${AuthUrl}/oauth/authorize
+    resource:
+      user-info-uri: ${AuthUrl}/users
+  
